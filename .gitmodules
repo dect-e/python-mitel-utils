@@ -1,0 +1,3 @@
+[submodule "python-mitel"]
+	path = python-mitel
+	url = https://github.com/n-st/python-mitel.git

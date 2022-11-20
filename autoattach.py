@@ -20,7 +20,7 @@ omm_username = config['DEFAULT'].get('omm_username', 'omm')
 omm_password = config['DEFAULT'].get('omm_password')
 
 client = OMMClient(omm_ip, omm_port)
-client.login(omm_username, omm_password)
+client.login(omm_username, omm_password, ommsync=True)
 
 ub_users = list(client.find_users({'ppn': '0'}))
 print('Unbound users:', [u.num + ' (' + u.uid + ')' for u in ub_users])
